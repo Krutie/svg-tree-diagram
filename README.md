@@ -1,4 +1,4 @@
-# svg-tree-diagram
+# SVG Tree Diagram
 
 This is a supporting GitHub Repository for the article -
 [Building a Dynamic Tree Diagram with SVG and Vue.js ](https://medium.com/@krutie/building-a-dynamic-tree-diagram-with-svg-and-vue-js-a5df28e300cd)
