@@ -2,7 +2,7 @@
   <div id="app">
     <button @click="visible = !visible">
       <span v-if="visible"> Hide Config </span>
-      <span v-else="visible"> Show Config </span>
+      <span v-else> Show Config </span>
     </button>
     <div id="container">
       <config
@@ -41,9 +41,9 @@
 </template>
 
 <script>
-import ClipMask from "./components/ClipMask.vue"
-import Config from "./components/Config.vue"
-import CubicBezier from "./components/CubicBezier.vue"
+import ClipMask from "./components/ClipMask.vue";
+import Config from "./components/Config.vue";
+import CubicBezier from "./components/CubicBezier.vue";
 
 export default {
   name: "app",
@@ -67,44 +67,44 @@ export default {
         "Korath"
       ],
       visible: false
-    }
+    };
   },
   computed: {
     topHeight() {
       // 20% of the size
-      return this.size * 0.2
+      return this.size * 0.2;
     },
     bottomHeight() {
       // 80% of the size
-      return this.size * 0.8
+      return this.size * 0.8;
     },
     width() {
-      return this.size
+      return this.size;
     },
     halfSize() {
       // 50% of the size
-      return this.size * 0.5
+      return this.size * 0.5;
     },
     distance() {
       // distance between two array items on the horizon
-      return Math.round(this.width / this.items.length)
+      return Math.round(this.width / this.items.length);
     },
     radius() {
-      return this.topHeight * 0.5
+      return this.topHeight * 0.5;
     },
     viewbox() {
-      return "0 0 " + this.size + " " + this.size
+      return "0 0 " + this.size + " " + this.size;
     }
   },
   methods: {
     handleAddItem(item) {
-      this.items.push(item)
+      this.items.push(item);
     },
     handleRemoveItem(i) {
-      this.items.splice(i, 1)
+      this.items.splice(i, 1);
     }
   }
-}
+};
 </script>
 
 <style>
