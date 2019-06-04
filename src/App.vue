@@ -2,7 +2,7 @@
   <div id="app">
     <button @click="visible = !visible">
       <span v-if="visible"> Hide Config </span>
-      <span v-else="visible"> Show Config </span>
+      <span v-else> Show Config </span>
     </button>
     <div id="container">
       <config
@@ -104,7 +104,7 @@ export default {
       this.items.splice(i, 1)
     }
   }
-}
+};
 </script>
 
 <style>
